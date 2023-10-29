@@ -20,9 +20,9 @@ fi
 read -p "Please, enter the name for a new user: " NEWUSER
 
 if grep $NEWUSER /etc/passwd; then
-	sudo adduser $NEWUSER && sudo usermod -aG sudo $NEWUSER && echo $(sudo groups $NEWUSER)
+	echo "This user name exist in the system already!"
 else
-	adduser $NEWUSER
+	sudo adduser $NEWUSER && sudo usermod -aG sudo $NEWUSER
 fi
 
 ===========================================================================
