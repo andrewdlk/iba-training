@@ -1,0 +1,10 @@
+[Unit]
+Description=Simple user service that show you time and date
+
+[Service]
+ExecStart=/usr/local/bin/myservice.sh
+Restart=Always
+User=pro
+
+[Install]
+WantedBy=multi-user.target
