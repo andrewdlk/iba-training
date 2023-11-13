@@ -1,4 +1,4 @@
 1. Подключить Windows Slave к Jenkins.
 2. Создать джобу, которая запустит на новом слейве любой bat скрипт.
 
-Look in the /screenshots subdirectory
+See /screenshots subdirectory
