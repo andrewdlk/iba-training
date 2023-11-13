@@ -6,4 +6,4 @@
 6. Что такое git submodule ?
 7. Изучить гит стратегии https://bool.dev/blog/detail/git-branching-strategies
 
-1. File .gitignore
+
