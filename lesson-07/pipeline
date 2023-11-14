@@ -1,0 +1,30 @@
+pipeline {
+    agent { 
+        label 'Docker'
+    }    
+    stages {
+        stage('Kibana Deployment') {
+            agent { 
+                docker { image 'kibana:8.11.0' }
+            } 
+            steps {
+                echo 'Hello, Kibana!'
+                sh 'kibana --version'
+            }
+        }    
+        stage('Elasticsearch Deployment') {
+            agent {
+                docker { image 'elasticsearch:8.11.0' }
+            } 
+            steps  {
+                echo 'Hello, Elasticsearch'
+                sh 'elasticsearch -version'
+            }
+        }
+    }
+}        
+
+
+
+
+
