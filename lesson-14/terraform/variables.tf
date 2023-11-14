@@ -21,5 +21,5 @@ variable "dav-common-tags" {
 
 variable "dav-vpc1-cidr_block" {
   type    = string
-  default = "10.200.0.0/16"
+  default = "10.100.0.0/16"
 }
