@@ -6,18 +6,20 @@
 
 
 provider "aws" {
-  region = "us-east-1"
+  region = var.region
 }
 
 # Create Custom VPC
 
-resource "aws_vpc" "staging-vpc" {
-  cidr_block = "10.0.0.0/16"
-  tags = {
-    Name = "dav-vpc"
-  }
+resource "aws_vpc" "development-vpc" {
+  cidr_block = var.dav-vpc1-cidr_block
+  //tags       = var.dav-common-tags
+  tags = merge(var.dav-common-tags, { Name = "DAV-VPC1 by Terraform" })
 }
 
+
+
+/*
 # Create IGW
 
 resource "aws_internet_gateway" "staging-igw" {
@@ -115,5 +117,5 @@ resource "aws_security_group" "dav-sg-tf" {
 
   }
 }
-
+*/
 
