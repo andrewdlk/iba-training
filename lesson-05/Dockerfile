@@ -6,5 +6,5 @@ RUN apt-get install -y nginx
 
 COPY ./site-content/index.html /usr/share/nginx/html/index.html
 EXPOSE 80
-
+CMD ["echo","Image created"]
 
