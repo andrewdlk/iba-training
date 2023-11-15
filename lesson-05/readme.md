@@ -3,11 +3,11 @@
 3. Изучить разницу между CMD и Entrypoint.
 
 
-1. Look in thei /screenshots subdirectory
-2. Commands: 
-	vim Dockerfile
-	docker build -t my-nginx:0.1 .
-	docker tag my-nginx:0.1 andrewdlk/my-nginx:0.1
-	docker push andrewdlk/my-nginx:0.1
+ Look in the /screenshots subdirectory
+ Commands: 
+1. vim Dockerfile
+2. docker build -t my-nginx:0.1 .
+3. docker tag my-nginx:0.1 andrewdlk/my-nginx:0.1
+4. docker push andrewdlk/my-nginx:0.1
 
 
