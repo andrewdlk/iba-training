@@ -1,5 +1,5 @@
-Task 1
-
+## Task 1
+```bash
 #!/bin/bash
 
 
@@ -15,3 +15,4 @@ echo $uppercase_characters
 uppercase_count=$(echo "$uppercase_characters" | wc -w)
 
 echo "The number of uppercase characters in the text: $uppercase_count"
+```
