@@ -1,5 +1,5 @@
 # Using bash script find word "Error" in the file and if this file consist in the file then remove this file. find-error-in-file.sh:
-
+```bash
 #!/bin/bash
 
 read -p "Enter file name: " FILENAME
@@ -10,11 +10,11 @@ if grep -s "error" $FILENAME
 	else
 		echo "$FILENAME doesn't contains a word "error""
 fi
-
+```
 ==========================================================================
 
 # Using bash script create user. but if rhis user consist in the server then echo message about it. newuser-add.sh:
-
+```bash
 #!/bin/bash
 
 read -p "Please, enter the name for a new user: " NEWUSER
@@ -24,13 +24,13 @@ if grep $NEWUSER /etc/passwd; then
 else
 	sudo adduser $NEWUSER && sudo usermod -aG sudo $NEWUSER
 fi
-
+```
 ===========================================================================
 
 # Create own simple systemd service
 
-1)  sudo nano /usr/local/bin/myservice.sh
-
+1)  ``sudo nano /usr/local/bin/myservice.sh``
+```bash
 #!/bin/bash
 set -o errexit
 set -o nounset
@@ -39,10 +39,10 @@ while true; do
   echo "Mr.(s) $yourname. This service show you date and time on your OS: "$(date)""
   sleep 10
 done
+```
 
-
-2)  sudo nano /etc/systemd/system/myservice.service
-
+2)  ```sudo nano /etc/systemd/system/myservice.service```
+```service
 [Unit]
 Description=Simple user service that show you time and date
 
@@ -53,11 +53,11 @@ User=pro
 
 [Install]
 WantedBy=multi-user.target
+```
 
-
-3) $ sudo systemctl start myservice
-   $ sudo systemctl status myservice
-   $ sudo systemctl restart myservice
-   $ sudo systemctl enable myservice
-   $ sudo systemctl edit --full myservice
+3) ```$ sudo systemctl start myservice```
+   ```$ sudo systemctl status myservice```
+   ```$ sudo systemctl restart myservice```
+   ```$ sudo systemctl enable myservice```
+   ```$ sudo systemctl edit --full myservice```
  
