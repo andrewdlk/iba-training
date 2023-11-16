@@ -3,6 +3,6 @@
 
 _______________
 
-### 1. ⚪ Task 1
+### 1. ⚪ 
 
-### 2. ✅ Task 2  Look in ./terraform/hw15/project1 an /screenshots
+### 2. ✅  ***Look in ./terraform/hw15/project1 an /screenshots***
