@@ -4,6 +4,8 @@
 3.	Через data найти любую созданную SG.
 4.	Не забыть всё удалить и использовать t3.micro.
 
+__________
+
 Task 1: terraform/main.tf      screenshots/Task1
 
 Task 2:	terraform/custom_vpc   screenshots/Task2
