@@ -1,0 +1,12 @@
+---
+- name: Copy and Remove file variant a
+  hosts: web_servers
+  ##  become: yes
+
+  tasks:
+    - name: Copy file from master to slave
+      copy: src=./hosts dest=/home/pro/hosts
+
+
+    - name: Remove the file
+      command: rm /home/pro/hosts

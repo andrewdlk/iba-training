@@ -1,0 +1,15 @@
+---
+- hosts: web_servers
+  ##  become: yes
+
+
+  tasks:
+  - name: Copy file from master to slave with permission
+    ansible.builtin.copy:
+      src: ./hosts
+      dest: /home/pro/hosts
+      mode: '0644'
+
+
+  - name: Remove the file
+    command: rm /home/pro/hosts
