@@ -1,0 +1,19 @@
+---
+- name: Install package
+  hosts: all
+  become: yes
+
+
+  tasks:
+    - name: Install package for Redhat
+      yum:
+        name: httpdsdfsdfsdfsdfsdf
+        #when: ansible_os_family == "RedHat"
+      ignore_errors: true
+
+
+
+    - name: Install package for Debian
+      apt:
+        name: apache2
+      when: ansible_os_family == "Debian"

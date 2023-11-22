@@ -1,0 +1,10 @@
+---
+ - name: Create a new user
+   hosts: web_servers
+
+
+   tasks:
+      - name: Add the user 'Vasya'
+        ansible.builtin.user:
+              name: vasya
+        become: yes

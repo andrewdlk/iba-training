@@ -1,5 +1,5 @@
 ---
-- name: Copy and Remove file variant b
+- name: Copy and Remove file variant B
   hosts: web_servers
   ##  become: yes
 

@@ -1,0 +1,7 @@
+ $ ansible -i hosts all -m ping
+ 
+ $ ansible web_servers -m apt -a "name=htop state=latest" --become-method sudo -b
+
+ $ ansible web_servers -m ansible.builtin.copy -a 'src=./playbook4.yml dest=/tmp/playbook4.yml'
+
+ $ smbclient -m smb2 '//x.x.x.x/transfer/' -U andrew -c 'mput *'

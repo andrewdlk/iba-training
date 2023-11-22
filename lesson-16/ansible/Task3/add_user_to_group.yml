@@ -1,0 +1,11 @@
+---
+ - name: Append Users to the groups
+   hosts: web_servers
+
+   tasks:
+      - name: Add user to Docker group
+        user:
+          name: vasya
+          groups: docker
+          append: yes
+        become: yes

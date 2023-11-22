@@ -1,0 +1,15 @@
+node1 ansible_host=192.168.88.45 ansible_user=pro ansible_ssh_private_key_file=/home/pro/.ssh/id_rsa
+node2 ansible_host=192.168.88.46 ansible_user=pro ansible_ssh_private_key_file=/home/pro/.ssh/id_rsa
+
+[web_servers]
+node1
+
+[db_servers]
+node2
+
+[all:children]
+web_servers
+db_servers
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
