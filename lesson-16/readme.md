@@ -4,6 +4,8 @@
 
 ____
 
-1. Look in **./asible/Task1* and **./screenshots/Task1*
-2. Look in **./ansible/Task2*
-3. Look in **./ansible/Task3* and **./screenshots/Task3*
+✅ 1. Look in **./asible/Task1* and **./screenshots/Task1*
+
+✅ 2. Look in **./ansible/Task2*
+
+✅ 3. Look in **./ansible/Task3* and **./screenshots/Task3*
