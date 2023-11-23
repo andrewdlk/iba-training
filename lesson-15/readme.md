@@ -5,4 +5,4 @@ _______________
 
 ### 1. ⚪ 
 
-### 2. ✅  ***Look in*** **./terraform/hw15/project1** ***and*** /screenshots/task2***
+### 2. ✅  ***Look in*** **./terraform/hw15/project1** ***and*** /screenshots/task2
