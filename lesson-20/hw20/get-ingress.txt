@@ -1,2 +1,0 @@
-NAME          CLASS    HOSTS                                                                     ADDRESS                                                                   PORTS   AGE
-ingress-web   <none>   a91a8d22eab304ea2bfaee5a649c08af-1671790774.us-east-1.elb.amazonaws.com   a91a8d22eab304ea2bfaee5a649c08af-1671790774.us-east-1.elb.amazonaws.com   80      3m43s
